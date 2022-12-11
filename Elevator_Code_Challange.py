@@ -1,4 +1,6 @@
 import random
+
+
 # This Function is just for number readablity 
 def grams(ln):
     ln=str(ln)
@@ -12,6 +14,8 @@ def grams(ln):
     elif ln[-1] >=str(4) or ln==0:
         gram="th"
     return ln+gram
+
+
 
 # Elevator class
 class Elevator:
@@ -47,6 +51,8 @@ class Elevator:
         # self.door_open = False
         print("Elevator doors closing at floor {}".format(grams(self.current_floor)))
 
+        
+        
 class floor_caller:
     def __init__(self,direction):
         self.direction=direction
@@ -57,6 +63,8 @@ class floor_caller:
         elif self.direction == "Down":
             print("Elevator moving down to your floor")
 
+            
+            
 class oprating:
     
     def __init__(self):
